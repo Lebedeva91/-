@@ -1,0 +1,178 @@
+body {
+  display: grid;
+  grid-template-rows: 70px 1fr 100px;
+  grid-template-columns: 1fr 700px 400px 1fr;
+  grid-template-areas:
+    "nav header header ads"
+    "nav article bloc-right ads"
+    "nav article footer ads";
+  /* height: 100vh; */
+}
+
+.header-wrapper {
+  width: 100%;
+}
+
+.header {
+  background: green;
+  width: 1000px;
+  margin: 0 auto;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  grid-area: header;
+}
+
+.logo {
+  background: hotpink;
+  width: 300px;
+  height: 70px;
+}
+
+.search {
+  width: 150px;
+}
+
+.menu-wrapper {
+  display: flex;
+  margin: 30px;
+}
+
+.menu-item:not(:last-child) {
+  margin-right: 15px;
+}
+
+.glv {
+  background: orange;
+  height: 40px;
+  width: 40px;
+}
+
+.like {
+  background: yellow;
+  height: 40px;
+  width: 40px;
+}
+
+.nastr {
+  background: khaki;
+  height: 40px;
+  width: 40px;
+}
+
+.nav {
+  grid-area: nav;
+}
+
+.main {
+  display: flex;
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.article {
+  /* background: yellowgreen; */
+  display: flex;
+  width: 600px;
+  margin-right: 30px;
+  grid-area: article;
+}
+
+.nov {
+  background: red;
+  height: 870px;
+  width: 500px;
+  margin-top: 50px;
+  margin-left: 100px;
+}
+
+.nowhed {
+  background: silver;
+  height: 70px;
+  width: 500px;
+  position: absolute;
+}
+
+.hednov {
+  background: sandybrown;
+  height: 40px;
+  width: 40px;
+  margin-left: 20px;
+  position: relative;
+  margin-top: 5px;
+  display: inline-block;
+}
+
+.hedtext {
+  background: teal;
+  height: 40px;
+  width: 150px;
+  position: relative;
+  margin-top: 10px;
+  margin-left: 30px;
+  display: inline-block;
+}
+
+.toch {
+  background: tomato;
+  height: 20px;
+  width: 20px;
+  display: inline-block;
+  position: relative;
+  margin-left: 200px;
+}
+
+.bloc-right {
+  /* display: flex; */
+  flex-direction: column;
+  grid-area: bloc-right;
+}
+
+.im {
+  background: turquoise;
+  height: 50px;
+  width: 200px;
+  display: flex;
+  margin-top: 50px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.myfoto {
+  background: indianred;
+  height: 50px;
+  width: 50px;
+}
+
+.myname {
+  background: indigo;
+  height: 30px;
+  width: 80px;
+  margin-right: 40px;
+}
+
+.istor {
+  background: yellow;
+  height: 300px;
+  width: 300px;
+  margin-top: 50px;
+}
+
+.recom {
+  background: rosybrown;
+  height: 300px;
+  width: 300px;
+  margin-top: 50px;
+}
+.ads {
+  grid-area: ads;
+}
+
+.footer {
+  background: seagreen;
+  height: 200px;
+  width: 400px;
+  margin-top: 50px;
+  grid-area: footer;
+}
